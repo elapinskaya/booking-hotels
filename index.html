@@ -139,21 +139,21 @@
     <form action="https://www.google.com.ua" method="post">
       <p>
         <label for="arrival date">Дата заезда</label>
-        <input type="date" name="date" value="2017-04-24">
+        <input id="arrival date" type="date" name="date" value="2017-04-24">
       </p>
       <p>
         <label for="date of departure">Дата выезда</label>
-        <input type="date" name="date" value="2017-06-04">
+        <input id="date of departure" type="date" name="date" value="2017-06-04">
       </p>
       <p>
       <label for="adults">Взрослые</label>
-      <input type="button" value="+" onclick="change('amount',0,10,1);"/>
+      <input id="adults" type="button" value="+" onclick="change('amount',0,10,1);"/>
       <input id="adults-count" type="text" value="1">
       <input type="button" value="-" onclick="change('amount',0,10,-1);"/>
       </p>
       <p>
       <label for="children">Дети</label>
-      <input type="button" value="+" onclick="change( 'amount',0,10,1);"/>
+      <input id="children" type="button" value="+" onclick="change( 'amount',0,10,1);"/>
       <input id="children-count" type="text" value="1"/>
       <input type="button" value="-" onclick="change( 'amount',0,10,-1);"/>
       </p>
