@@ -41,84 +41,84 @@
     <div class="sedona-img"></div>
   </section>
   <section>
-    <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-    <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
-    <ul>
-      <li>
-        <h3>
+    <p class="title_1">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+    <h2 class="title_2">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+    <ul class="reasons-list">
+      <li class="reasons-list__item">
+        <h3 class="reasons-list__item_title">
           Настоящий <br>
           городок
         </h3>
-        <p>
+        <p class="reasons-list__item_text">
           — №1 — <br>
           Седона — не аттракцион для туристов, <br>
           там течёт своя жизнь
         </p>
         <img src="img/city.svg" alt="City picture">
-        <ul>
-          <li>
-            <h4>Жильё</h4>
-            <p>
+        <ul class="reasons-list2">
+          <li class="reasons-list2__item">
+            <h4 class="reasons-list2__item_title">Жильё</h4>
+            <p class="reasons-list2__item_text">
               Рекомендуем пожить в настоящем <br>
               мотеле, всё как в кино!
             </p>
           </li>
-          <li>
-            <h4>Еда</h4>
-            <p>
+          <li class="reasons-list2__item">
+            <h4 class="reasons-list2__item_title">Еда</h4>
+            <p class="reasons-list2__item_text">
               Всегда заказывайте фирменный бургер, <br>
               вы не разочаруетесь!
             </p>
           </li>
-          <li>
-            <h4>Сувениры</h4>
-            <p>
+          <li class="reasons-list2__item">
+            <h4 class="reasons-list2__item_title">Сувениры</h4>
+            <p class="reasons-list2__item_text">
               Не только китайского, но и местного <br>
               производства!
             </p>
           </li>
         </ul>
       </li>
-      <li>
-        <h3>
+      <li class="reasons-list__item">
+        <h3 class="reasons-list__item_title">
           Там есть <br>
           Мост дьявола
         </h3>
-        <p>
+        <p class="reasons-list__item_text">
           — №2 — <br>
           Да, по нему можно пройти! Если конечно <br>
           вы осмелитесь
         </p>
         <img src="img/canyon.svg" alt="Canyon view">
       </li>
-      <li>
-        <h3>
+      <li class="reasons-list__item">
+        <h3 class="reasons-list__item_title_black">
           Небольшая <br>
           площадь
         </h3>
-        <p>
+        <p class="reasons-list__item_text_black">
           — №3 — <br>
           Все достопримечательности <br>
           находятся очень близко
         </p>
       </li>
-      <li>
-        <h3>
+      <li class="reasons-list__item">
+        <h3 class="reasons-list__item_title_black">
           Красивая <br>
           дорога
         </h3>
-        <p>
+        <p class="reasons-list__item_text_black">
           — №4 — <br>
           Ехать в Седону из Лас-Вегаса совсем <br>
           не скучно!
         </p>
       </li>
-      <li>
-        <h3>
+      <li class="reasons-list__item">
+        <h3 class="reasons-list__item_title_black">
           Мало <br>
           туристов
         </h3>
-        <p>
+        <p class="reasons-list__item_text_black">
           — №5 —<br>
           Большинство едет в гранд каньон <br>
           и толпится там
@@ -127,36 +127,36 @@
     </ul>
   </section>
   <section>
-    <h2>Заинтересовались?</h2>
-    <p>
+    <h2 class="search">Заинтересовались?</h2>
+    <p class="search-date">
       Укажите предполагаемые даты поездки, <br>
       и мы покажем вам лучшие предложения гостиниц в седоне
     </p>
   </section>
   <section>
-    <h2>Поиск гостиницы в Седоне</h2>
+    <h2 class="form-title">Поиск гостиницы в Седоне</h2>
     <form action="https://www.google.com.ua" method="post">
-      <p>
-        <label for="arrival date">Дата заезда</label>
-        <input id="arrival date" type="date" name="date" value="2017-04-24">
+      <p class="form-label">
+        <label for="arrival-date">Дата заезда</label>
+        <input id="arrival-date" type="date" name="date" value="2017-04-24">
       </p>
-      <p>
-        <label for="date of departure">Дата выезда</label>
-        <input id="date of departure" type="date" name="date" value="2017-06-04">
+      <p class="form-label">
+        <label for="date-of-departure">Дата выезда</label>
+        <input id="date-of-departure" type="date" name="date" value="2017-06-04">
       </p>
-      <p>
+      <p class="form-label">
       <label for="adults">Взрослые</label>
       <input id="adults" type="button" value="+" onclick="change('amount',0,10,1);"/>
       <input id="adults-count" type="text" value="1">
       <input type="button" value="-" onclick="change('amount',0,10,-1);"/>
       </p>
-      <p>
+      <p class="form-label">
       <label for="children">Дети</label>
       <input id="children" type="button" value="+" onclick="change( 'amount',0,10,1);"/>
       <input id="children-count" type="text" value="1"/>
       <input type="button" value="-" onclick="change( 'amount',0,10,-1);"/>
       </p>
-      <button type="button">
+      <button class="search-button" type="button">
         Найти
       </button>
     </form>
@@ -171,7 +171,7 @@
     <li><a href="https://www.facebook.com/">Фейсбук</a></li>
     <li><a href="https://www.youtube.com/?hl=RU">Ютуб</a></li>
   </ul>
-  <p>Website by Rogovaya Evgeniya</p>
+  <p class="author">Website by Rogovaya Evgeniya</p>
 </footer>
 </body>
 

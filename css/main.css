@@ -17,7 +17,7 @@ body {
   /*color: black;*/
   text-transform: uppercase;
 
-  background-color: white;
+  background-color: burlywood;
   background-image: url("../img/background_photo.jpg");
   background-position: center 100px;
   background-repeat: no-repeat;
@@ -58,3 +58,131 @@ a {
   height: 213px;
   background-image: url("../img/Sedona.svg");
 }
+.title_1 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.title_2 {
+  color: #000000;
+  opacity: 0.3;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+.reasons-list__item_title {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+}
+.reasons-list__item_text {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 21px;
+}
+.reasons-list__item_title_black,
+.reasons-list2__item_title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+}
+.reasons-list__item_text_black,
+.reasons-list2__item_text {
+  color: #000000;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 21px;
+  opacity: 0.3;
+}
+.search {
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+}
+.search-date {
+  color: #000000;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 24px;
+  opacity: 0.3;
+}
+.form-title {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: #756357;
+}
+.form-title:hover {
+  background-color: #604e43;
+}
+.form-title:active {
+  background-color: #503d32;
+  color: #857870;
+}
+.form-label {
+  color: #000000;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+}
+#arrival-date,
+#date-of-departure {
+  background-color: #f1f1f1;
+}
+#arrival-date:hover,
+#date-of-departure:hover {
+  background-color: #ebebeb;
+}
+#arrival-date:active,
+#date-of-departure:active {
+  background-color: #FFFFFF;
+}
+#adults,
+#children {
+  color: #000000;
+}
+#adults:hover,
+#children:hover {
+  color: #000000;
+}
+#adults:active,
+#children:active {
+  color: #81b3d2;
+}
+.search-button {
+  background-color: #81b3d2;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.search-button:hover {
+  color: #FFFFFF;
+  background-color: #699dc0;
+}
+.search-button:active {
+  color: #FFFFFF;
+  opacity: 0.3;
+  background-color: #5495bd;
+}
+.author {
+  color: #000000;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+.author:hover {
+  color: #81b3d2;
+}
+.author:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+
