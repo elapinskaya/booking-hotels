@@ -25,6 +25,7 @@ body {
 a {
   text-decoration: none;
 }
+
 .main-navigation {
   font-size: 14px;
   line-height: 16px;
@@ -58,54 +59,79 @@ a {
   height: 213px;
   background-image: url("../img/Sedona.svg");
 }
-.title_1 {
-  text-align: center;
-  color: #000000;
+
+
+.title {
   font-weight: 700;
   font-size: 21px;
-  line-height: 26px;
-}
-.title_2 {
+  line-height: 21px;
   text-align: center;
+}
+
+.title--dark {
   color: #000000;
-  opacity: 0.3;
+}
+
+.title--light {
+  color: #FFFFFF;
+}
+
+
+.subtitle {
+  text-align: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
 }
+
+.subtitle--dark {
+ color: rgba(0,0,0, 0.3);
+}
+
+.subtitle--light {
+  color: #FFFFFF;
+}
+
 li {
   list-style: none;
 }
-.reasons-list__item_title {
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 21px;
-}
-.reasons-list__item_text {
-  color: #FFFFFF;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 21px;
-}
+/*.reasons-list__item__title {*/
+/*  color: #FFFFFF;*/
+/*  font-weight: 700;*/
+/*  font-size: 21px;*/
+/*  line-height: 21px;*/
+/*}*/
+/*.reasons-list__item__text {*/
+/*  color: #FFFFFF;*/
+/*  font-weight: 400;*/
+/*  font-size: 21px;*/
+/*  line-height: 21px;*/
+/*}*/
 .reasons-list__item_title_black {
   color: #000000;
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
 }
-.reasons-list2__item_title1 {
-  color: #000000;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 21px;
-  padding-left: 30px;
-  background-image: url("../img/icon-house.svg");
-  background-position: left center;
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
+
+.subreasons-list__item {
+  text-align: center;
 }
-.reasons-list2__item_title2 {
+
+.subreasons-list__item__icon {
+  display: inline-block;
+}
+
+.icon-house {
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-house.svg");
+  background-size: 75px 72px;
+  width: 75px;
+  height: 72px;
+}
+
+
+.subreasons-list__item_title2 {
   color: #000000;
   font-weight: 700;
   font-size: 21px;
@@ -116,7 +142,7 @@ li {
   background-size: 20px 20px;
   background-repeat: no-repeat;
 }
-.reasons-list2__item_title3 {
+.subreasons-list__item_title3 {
   color: #000000;
   font-weight: 700;
   font-size: 21px;
@@ -128,7 +154,7 @@ li {
   background-repeat: no-repeat;
 }
 .reasons-list__item_text_black,
-.reasons-list2__item_text {
+.subreasons-list__item__text {
   color: #000000;
   font-weight: 400;
   font-size: 21px;
@@ -195,18 +221,18 @@ li {
 #children:active {
   color: #81b3d2;
 }
-.search-button {
+.square-button {
   background-color: #81b3d2;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
 }
-.search-button:hover {
+.square-button:hover {
   color: #FFFFFF;
   background-color: #699dc0;
 }
-.search-button:active {
+.square-button:active {
   color: #FFFFFF;
   opacity: 0.3;
   background-color: #5495bd;
@@ -218,13 +244,11 @@ li {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #81b3d2;;
 }
 .social__link--twitter {
-  padding-left: 30px;
   background-image: url("../img/twitter.svg");
-  background-position: left center;
   background-size: 20px 20px;
-  background-repeat: no-repeat;
 }
 .social__link--fb {
   padding-left: 30px;

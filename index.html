@@ -41,38 +41,40 @@
     <div class="sedona-img"></div>
   </section>
   <section>
-    <p class="title_1">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-    <h2 class="title_2">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+    <h2 hidden>5 причин, по которым Седона круче, чем гранд каньон!</h2>
+    <p class="title title--dark">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+    <p class="subtitle subtitle--dark">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     <ul class="reasons-list">
       <li class="reasons-list__item">
-        <h3 class="reasons-list__item_title">
+        <h3 class="reasons-list__item__title title title--light">
           Настоящий <br>
           городок
         </h3>
-        <p class="reasons-list__item_text">
+        <p class="reasons-list__item__text subtitle subtitle--light">
           — №1 — <br>
           Седона — не аттракцион для туристов, <br>
           там течёт своя жизнь
         </p>
         <img src="img/city.svg" alt="City picture">
-        <ul class="reasons-list2">
-          <li class="reasons-list2__item">
-            <h4 class="reasons-list2__item_title1">Жильё</h4>
-            <p class="reasons-list2__item_text">
+        <ul class="subreasons-list">
+          <li class="subreasons-list__item">
+            <div class="subreasons-list__item__icon icon-house"></div>
+            <h4 class="subreasons-list__item__title title title--dark">Жильё</h4>
+            <p class="subreasons-list__item__text subtitle subtitle--dark">
               Рекомендуем пожить в настоящем <br>
               мотеле, всё как в кино!
             </p>
           </li>
-          <li class="reasons-list2__item">
-            <h4 class="reasons-list2__item_title2">Еда</h4>
-            <p class="reasons-list2__item_text">
+          <li class="subreasons-list__item">
+            <h4 class="subreasons-list__item_title2">Еда</h4>
+            <p class="subreasons-list__item__text">
               Всегда заказывайте фирменный бургер, <br>
               вы не разочаруетесь!
             </p>
           </li>
-          <li class="reasons-list2__item">
-            <h4 class="reasons-list2__item_title3">Сувениры</h4>
-            <p class="reasons-list2__item_text">
+          <li class="subreasons-list__item">
+            <h4 class="subreasons-list__item_title3">Сувениры</h4>
+            <p class="subreasons-list__item__text">
               Не только китайского, но и местного <br>
               производства!
             </p>
@@ -80,11 +82,11 @@
         </ul>
       </li>
       <li class="reasons-list__item">
-        <h3 class="reasons-list__item_title">
+        <h3 class="reasons-list__item__title">
           Там есть <br>
           Мост дьявола
         </h3>
-        <p class="reasons-list__item_text">
+        <p class="reasons-list__item__text">
           — №2 — <br>
           Да, по нему можно пройти! Если конечно <br>
           вы осмелитесь
@@ -127,14 +129,13 @@
     </ul>
   </section>
   <section>
-    <h2 class="search">Заинтересовались?</h2>
+    <h2 hidden>Поиск гостиницы в Седоне</h2>
+    <p class="search">Заинтересовались?</p>
     <p class="search-date">
       Укажите предполагаемые даты поездки, <br>
       и мы покажем вам лучшие предложения гостиниц в седоне
     </p>
-  </section>
-  <section>
-    <h2 class="form-title">Поиск гостиницы в Седоне</h2>
+    <button type="button" class="square-button search-button--brown">Поиск гостиницы в Седоне</button>
     <form action="https://www.google.com.ua" method="post">
       <p class="form-label">
         <label for="arrival-date">Дата заезда</label>
@@ -144,24 +145,26 @@
         <label for="date-of-departure">Дата выезда</label>
         <input id="date-of-departure" type="date" name="date" value="2017-06-04">
       </p>
+      <div class="form-label">
+        <label for="adults-count">Взрослые</label>
+        <div class="increment-control">
+          <button type="button" class="increment-control__button">-</button>
+          <input class="increment-control__input" id="adults-count" type="text" value="1">
+          <button type="button" class="increment-control__button">+</button>
+        </div>
+      </div>
       <p class="form-label">
-      <label for="adults">Взрослые</label>
-      <input id="adults" type="button" value="+" onclick="change('amount',0,10,1);"/>
-      <input id="adults-count" type="text" value="1">
-      <input type="button" value="-" onclick="change('amount',0,10,-1);"/>
+        <label for="children">Дети</label>
+        <input id="children" type="button" value="+" onclick="change( 'amount',0,10,1);"/>
+        <input id="children-count" type="text" value="1" aria-label="Количество детей"/>
+        <input type="button" value="-" onclick="change( 'amount',0,10,-1);"/>
       </p>
-      <p class="form-label">
-      <label for="children">Дети</label>
-      <input id="children" type="button" value="+" onclick="change( 'amount',0,10,1);"/>
-      <input id="children-count" type="text" value="1"/>
-      <input type="button" value="-" onclick="change( 'amount',0,10,-1);"/>
-      </p>
-      <button class="search-button" type="button">
+      <button class="square-button search-button--lightblue" type="button">
         Найти
       </button>
     </form>
+    <img src="img/map.svg" alt="Map">
   </section>
-  <img src="img/map.svg" alt="Map">
 </main>
 <footer>
   <h2>Contacts</h2>
@@ -169,7 +172,7 @@
   <a href="tel:+7(495)666-01-66">+7(495)666-01-66</a>
   <ul>
     <li class="social__item">
-      <a href="https://twitter.com/?lang=uk" class="social__link social__link--twitter">Твитер</a>
+      <a href="https://twitter.com/?lang=uk" class="social__link social__link--twitter" aria-label="twitter"></a>
     </li>
     <li class="social__item">
       <a href="https://www.facebook.com/" class="social__link social__link--fb">Фейсбук</a>
