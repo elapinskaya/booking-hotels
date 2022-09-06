@@ -223,3 +223,25 @@ background-color: #81b3d2;
 
 
 
+.booking-details {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.booking-details__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.custom-checkbox {
+  border-color: #FFFFFF;
+}
+.custom-checkbox:active {
+  background-color: #FFFFFF;
+  opacity: 0;
+}
+
+
+
