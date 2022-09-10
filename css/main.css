@@ -5,47 +5,55 @@
   font-style: normal;
   font-weight: 400;
 }
-.main-header {
-  margin-bottom: 56px;
-}
 
 body {
   margin: 0;
   padding: 0;
 
   font-family: "PT Sans", Arial, serif;
-  /*font-size: 14px;*/
-  /*line-height: 24px;*/
-  /*font-weight: 700;*/
-  /*color: black;*/
   text-transform: uppercase;
-
-  background-color: burlywood;
-  background-image: url("../img/background_photo.jpg");
-  background-position: center 100px;
-  background-repeat: no-repeat;
 }
 a {
   text-decoration: none;
 }
+/*header styles*/
+.main-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.main-header__logo {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 69px);
+}
 
 .main-navigation {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   font-size: 14px;
   line-height: 16px;
   color: black;
   background-color: white;
+  position: relative;
 }
 .navigation-list {
-  width: 620px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
   margin: 0;
   padding: 0;
   list-style: none;
-  min-height: 70px;
+  height: 56px;
 }
+
+.navigation-list__item {
+  width: 240px;
+  text-align: center;
+}
+
 .navigation-list__item a {
   font-size: 14px;
   line-height: 26px;
@@ -60,17 +68,46 @@ a {
   color: #000000;
   opacity: 0.3;
 }
+
+/*sedona section styles*/
+
+.sedona-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/background_photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+
+}
+
 .welcome-img {
   width: 256px;
   height: 84px;
   background-image: url("../img/welcome.svg");
+  background-repeat: no-repeat;
+  display: block;
+  margin-top: 150px;
+  margin-bottom: 54px;
 }
+
 .sedona-img {
   width: 456px;
   height: 213px;
   background-image: url("../img/Sedona.svg");
 }
 
+.poligon-img {
+  position: absolute;
+  bottom: 0;
+  /*width: 1200px;*/
+  /*height: 41px;*/
+  /*background-image: url("../img/Shape.svg");*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+}
 
 .title {
   font-weight: 700;
