@@ -46,21 +46,23 @@
 </section>
 <section>
   <h2 hidden>5 причин, по которым Седона круче, чем гранд каньон!</h2>
-  <p class="title title--dark">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+  <p class="title title--dark">Седона — небольшой городок в Аризоне, <br>
+    заслуживающий большего!</p>
   <p class="subtitle subtitle--dark">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-  <ul class="reasons-list">
-    <li class="reasons-list__item">
-      <h3 class="reasons-list__item__title title title--light">
-        Настоящий <br>
-        городок
-      </h3>
-      <p class="reasons-list__item__text subtitle subtitle--light">
-        — №1 — <br>
-        Седона — не аттракцион для туристов, <br>
-        там течёт своя жизнь
-      </p>
-      <img src="img/city.svg" alt="City picture">
-      <ul class="subreasons-list">
+  <section class="reasons-blue__row">
+  <div class="reason reason-blue">
+    <h3 class="reasons-title">
+      Настоящий <br>
+      городок<br>
+    </h3>
+    <p class="reason-text">
+      — №1 — <br>
+      Седона — не аттракцион для туристов, <br>
+      там течёт своя жизнь
+    </p>
+  </div>
+    </section>
+        <ul class="subreasons-list">
         <li class="subreasons-list__item">
           <div class="subreasons-list__item__icon icon-house"></div>
           <h4 class="subreasons-list__item__title title title--dark">Жильё</h4>
@@ -86,55 +88,56 @@
           </p>
         </li>
       </ul>
-    </li>
-    <li class="reasons-list__item">
-      <h3 class="reasons-list__item__title title title--light">
-        Там есть <br>
-        Мост дьявола
-      </h3>
-      <p class="reasons-list__item__text subtitle subtitle--light">
-        — №2 — <br>
-        Да, по нему можно пройти! Если конечно <br>
-        вы осмелитесь
-      </p>
-      <img src="img/canyon.svg" alt="Canyon view">
-    </li>
-    <li class="reasons-list__item">
-      <h3 class="reasons-list__item_ttle title title--dark">
-        Небольшая <br>
-        площадь
-      </h3>
-      <p class="reasons-list__item__text subtitle subtitle--dark">
-        — №3 — <br>
-        Все достопримечательности <br>
-        находятся очень близко
-      </p>
-    </li>
-    <li class="reasons-list__item">
-      <h3 class="reasons-list__item_ttle title title--dark">
-        Красивая <br>
-        дорога
-      </h3>
-      <p class="reasons-list__item__text subtitle subtitle--dark">
-        — №4 — <br>
-        Ехать в Седону из Лас-Вегаса совсем <br>
-        не скучно!
-      </p>
-    </li>
-    <li class="reasons-list__item">
-      <h3 class="reasons-list__item_ttle title title--dark">
-        Мало <br>
-        туристов
-      </h3>
-      <p class="reasons-list__item__text subtitle subtitle--dark">
-        — №5 —<br>
-        Большинство едет в гранд каньон <br>
-        и толпится там
-      </p>
-    </li>
-  </ul>
-</section>
+  <section class="reasons-blue__row__reverse">
+  <div class="reason reason-blue">
+    <h3 class="reasons-title">
+      Там есть <br>
+      Мост дьявола
+    </h3>
+    <p class="reason-text">
+      — №2 — <br>
+      Да, по нему можно пройти! Если конечно <br>
+      вы осмелитесь
+    </p>
+  </div>
+  </section>
+  <section class="reasons-dark">
+  <div class="reason">
+    <h3 class="reasons-title">
+      Небольшая <br>
+      площадь
+    </h3>
+    <p class="reason-text">
+      — №3 — <br>
+      Все достопримечательности <br>
+      находятся очень близко
+    </p>
+  </div>
+  <div class="reason">
+    <h3 class="reasons-title">
+      Красивая <br>
+      дорога
+    </h3>
+    <p class="reason-text">
+      — №4 — <br>
+      Ехать в Седону из Лас-Вегаса совсем <br>
+      не скучно!
+    </p>
+  </div>
+  <div class="reason">
+    <h3 class="reasons-title">
+      Мало <br>
+      туристов
+    </h3>
+    <p class="reason-text">
+      — №5 —<br>
+      Большинство едет в гранд каньон <br>
+      и толпится там
+    </p>
+  </div>
+  </section>
 <section>
+  <div class="search-hotels">
   <h2 hidden>Поиск гостиницы в Седоне</h2>
   <p class="search">Заинтересовались?</p>
   <p class="search-date">
@@ -142,7 +145,9 @@
     и мы покажем вам лучшие предложения гостиниц в седоне
   </p>
   <button type="button" class="square-button search-button--brown">Поиск гостиницы в Седоне</button>
-  <form action="https://www.google.com.ua" method="post">
+  </div>
+  <div class="form">
+  <form class="search-form" action="https://www.google.com.ua" method="post">
     <p class="form-label">
       <label for="arrival-date">Дата заезда</label>
       <input id="arrival-date" type="date" name="date" value="2017-04-24">
@@ -171,10 +176,31 @@
       Найти
     </button>
   </form>
-  <img src="img/map.svg" alt="Map">
-</section>
+  </section>
+  <footer>
+    <div class="footer">
+      <h2 hidden>Contacts</h2>
+      <p>#visitSEDONA <br>
+        <a href="tel:+7(495)666-01-66">+7(495)666-01-66</a>
+      </p>
+      <ul class="social-link">
+        <li class="social__item">
+          <a href="https://twitter.com/?lang=uk" class="social__link social__link--twitter" aria-label="twitter"></a>
+        </li>
+        <li class="social__item">
+          <a href="https://www.facebook.com/" class="social__link social__link--fb" aria-label="facebook"></a>
+        </li>
+        <li class="social__item">
+          <a href="https://www.youtube.com/?hl=RU" class="social__link social__link--youtube" aria-label="youtube"></a>
+        </li>
+      </ul>
+      <p class="author">Website by Rogovaya Evgeniya</p>
+    </div>
+  </div>
+  </footer>
 
 
+<section class="type-hotel">
 <form>
   <h2 class="booking-details">Инфраструктура:</h2>
   <p class="booking-details__item">
@@ -211,7 +237,7 @@
     </label>
   </p>
 </form>
-<section>
+<section class="right">
   <h2 class="booking-details">Стоимость в сутки</h2>
   <p class="booking-details__item">ОТ 0 ДО 3000</p>
   <div class="slidecontainer">
@@ -219,74 +245,95 @@
     <input type="range" min="1" max="3000" value="50" class="slider" id="myRange">
   </div>
 </section>
-<section>
+</section>
+<section class="results">
   <p class="title-page2">Найдено: 3</p>
   <h3 class="sorting">Сортировка:</h3>
-  <ul>
+  <ul class="sorting-list">
     <li class="sorting sorting-item">По цене</li>
     <li class="sorting sorting-item">По типу</li>
     <li class="sorting sorting-item">По рейтингу</li>
   </ul>
+  <div class="arrow">
   <div class="icon-arrow-up"></div>
   <div class="icon-arrow-down"></div>
-</section>
-<section>
-  <img src="img/amara-hotel.svg" alt="hotel-amara">
+  </div>
+  </section>
+  <hr>
+<section class="hotels">
+  <img class="hotel-amara" src="img/amara-hotel.svg" alt="hotel-amara">
+  <div class="hotels-info">
   <h3 class="title-hotel">Amara Resort & Spa</h3>
+  <div class="hotel-price">
   <p class="info-hotel">Гостинница</p>
   <p class="info-hotel">От 4000 грн.</p>
-  <button class="square-button search-button--lightblue" type="submit"><a href="#">Подробнее</a></button>
-  <button class="square-button search-button--brown" type="button">Забронировать</button>
+  </div>
+  <div class="button-page2">
+  <button class="button-lightblue" type="submit"><a href="#" style="color: #FFFFFF">Подробнее</a></button>
+  <button class="button-brown" type="button">Забронировать</button>
+  </div>
+  </div>
+  <div class="right">
+  <div class="star-colum">
   <div class="icon-star"></div>
   <div class="icon-star"></div>
   <div class="icon-star"></div>
   <div class="icon-star"></div>
+  </div>
   <p class="info-hotel rating">Рейтинг: 8,5</p>
+  </div>
 </section>
-<section>
+  <hr>
+<section class="hotels">
   <img src="img/amara-hotel.svg" alt="hotel-amara">
+  <div class="hotels-info">
   <h3 class="title-hotel">Desert Quail Inn</h3>
+  <div class="hotel-price">
   <p class="info-hotel">Мотель</p>
   <p class="info-hotel">От 3000 грн.</p>
-  <button class="square-button search-button--lightblue" type="submit"><a href="#">Подробнее</a></button>
-  <button class="square-button search-button--brown" type="button">Забронировать</button>
+  </div>
+  <div class="button-page2">
+  <button class="button-lightblue" type="submit"><a href="#" style="color: #FFFFFF">Подробнее</a></button>
+  <button class="button-brown" type="button">Забронировать</button>
+  </div>
+  </div>
+  <div class="right">
+  <div class="star-colum">
   <div class="icon-star"></div>
   <div class="icon-star"></div>
   <div class="icon-star"></div>
+  </div>
   <p class="info-hotel rating">Рейтинг: 8,9</p>
+  </div>
 </section>
-<section>
+  <hr>
+<section class="hotels">
   <img src="img/amara-hotel.svg" alt="hotel-amara">
+  <div class="hotels-info">
   <h3 class="title-hotel">Villas at Poco Diablo</h3>
+  <div class="hotel-price">
   <p class="info-hotel">Апартаменты</p>
   <p class="info-hotel">От 2000 грн.</p>
-  <button class="square-button search-button--lightblue" type="submit"><a href="#">Подробнее</a></button>
-  <button class="square-button search-button--brown" type="button">Забронировать</button>
+  </div>
+  <div class="button-page2">
+  <button class="button-lightblue" type="submit"><a href="#" style="color: #FFFFFF">Подробнее</a></button>
+  <button class="button-brown" type="button">Забронировать</button>
+  </div>
+  </div>
+  <div class="right">
+  <div class="star-colum">
   <div class="icon-star"></div>
   <div class="icon-star"></div>
+  </div>
   <p class="info-hotel rating">Рейтинг: 9,2</p>
+  </div>
 </section>
+  <hr>
 
 
 </form>
 </main>
-<footer>
-  <h2 hidden>Contacts</h2>
-  <p>#visitSEDONA</p>
-  <a href="tel:+7(495)666-01-66">+7(495)666-01-66</a>
-  <ul>
-    <li class="social__item">
-      <a href="https://twitter.com/?lang=uk" class="social__link social__link--twitter" aria-label="twitter"></a>
-    </li>
-    <li class="social__item">
-      <a href="https://www.facebook.com/" class="social__link social__link--fb" aria-label="facebook"></a>
-    </li>
-    <li class="social__item">
-      <a href="https://www.youtube.com/?hl=RU" class="social__link social__link--youtube" aria-label="youtube"></a>
-    </li>
-  </ul>
-  <p class="author">Website by Rogovaya Evgeniya</p>
-</footer>
+
 </body>
 
 </html>
