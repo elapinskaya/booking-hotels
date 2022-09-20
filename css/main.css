@@ -18,7 +18,8 @@ a {
 }
 /*header styles*/
 .main-header {
-  position: fixed;
+  position: sticky;
+  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
