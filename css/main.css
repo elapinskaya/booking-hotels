@@ -154,18 +154,40 @@ li {
 /*  line-height: 21px;*/
 /*}*/
 
+.reason-list__item {
+
+}
+
+.reason-list__item__wrapper {
+  height: 256px;
+  position: relative;
+  display: flex;
+}
+
 .reason {
+  flex: 1 1 0;
   text-align: center;
   font-weight: 400;
   font-size: 21px;
   line-height: 21px;
   padding: 37px;
   margin: 0;
-  height: 200px;
+  /*height: 200px;*/
 }
 
 .reason-blue {
   background-color: #81b3d2;
+}
+
+.reason__image {
+  height: 100%;
+  flex: 2 1 0;
+}
+
+.reason__image-city {
+  background-repeat: no-repeat;
+  background-image: url("../img/cyti.png");
+  background-size: cover;
 }
 
 .reasons-blue__row {
@@ -189,6 +211,7 @@ li {
   background-color: #F2F2F2;
   padding: 37px;
   margin: 0;
+  height: 332px;
 }
 
 .reasons-blue__row__reverse {
@@ -235,6 +258,13 @@ li {
 
 .subreasons-list {
   text-align: center;
+}
+
+.subreasons-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .subreasons-list__item__icon {
